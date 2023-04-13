@@ -168,7 +168,7 @@ header a {
 #nav-tabs a div,
 header a div {
   display: inline-block;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   height: auto;
 }
 /* #nav-tabs a div:hover{
