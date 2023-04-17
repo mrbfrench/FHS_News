@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'robotobold';
-    src: url('/global/fonts/roboto-bold-webfont.woff') format('woff');
+    src: url('/global/fonts/roboto-bold-webfont.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
