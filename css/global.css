@@ -174,18 +174,16 @@ header a div {
 /* #nav-tabs a div:hover{
   background-color: var(--anchor-hover);
 } */
-#nav-tabs a div svg,
-header a div svg {
-  margin: 2vw;
-  width: auto;
-  height: 8vw;
+#nav-tabs a div img,
+header a div img {
+  margin: 1vw;
   fill: var(--navigation-icon-color);
 }
-header a div svg {
+header a div img {
   fill: var(--header-icon-color);
 }
-#nav-tabs a.selected div svg,
-header a.selected div svg {
+#nav-tabs a.selected div img,
+header a.selected div img {
   fill: var(--navigation-active-icon-color);
 }
 
