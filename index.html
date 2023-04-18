@@ -66,10 +66,10 @@
 		<section class="block">
 			<section class="row">
 				<p
-						style="background: pink; color: black; font-size: calc(24 * min(0.2vw, 1px)); font-weight: bold; text-align: center; padding: 0.4em 0.9em; border: calc(6 * min(0.2vw, 1px)) solid red; margin: 0;">
+					style="background: pink; color: black; font-size: calc(24 * min(0.2vw, 1px)); font-weight: bold; text-align: center; padding: 0.4em 0.9em; border: calc(6 * min(0.2vw, 1px)) solid red; margin: 0;">
 					You currently have JavaScript disabled. For full functionality, enable JavaScript. (<a
-						href="https://www.enable-javascript.com/" target="_blank"
-						style="color: inherit; text-decoration: underline !important;">How?</a>)
+					href="https://www.enable-javascript.com/" target="_blank"
+					style="color: inherit; text-decoration: underline !important;">How?</a>)
 				</p>
 			</section>
 		</section>
@@ -92,32 +92,24 @@
 		<section class="block">
 			<section class="row" id="period">
 				<button class="container arrow hover" onclick="arrowAdvancePeriod(-1)">
-					‹
+					&#8249;
 				</button>
 				<div id="period__box" class="container">
-					<!--<input class="hover" type="text" id="period__header" placeholder="Enter Period Name" value="No Period" maxlength="20" onfocusout = "savePeriodName(this)">-->
-					<p id="period__header">Silver Period 5</p>
-					<p id="period__time">08:30 - 09:53</p>
-					<div id="period__gallery">
-						<button class="gallery-dot"></button>
-						<button class="gallery-dot active"></button>
-						<button class="gallery-dot"></button>
-						<button class="gallery-dot"></button>
-						<button class="gallery-dot"></button>
-						<button class="gallery-dot"></button>
-						<button class="gallery-dot"></button>
-					</div>
+					<!-- <input class="hover" type="text" id="period__header" placeholder="Enter Period Name" value="No Period" maxlength="20" onfocusout = "savePeriodName(this)"> -->
+					<p id="period__header"></p>
+					<p id="period__time">Not School Hours</p>
+					<div id="period__gallery"></div>
 				</div>
 				<button class="container arrow hover" onclick="arrowAdvancePeriod(1)">
-					›
+					&#8250;
 				</button>
 			</section>
 
 			<section class="row container" id="countdown">
-				<p id="countdown__timer"></p> == $0
+				<p id="countdown__timer">--:--</p>
 
 				<div id="countdown__bar">
-					<div id="countdown__progress" style="width: 34.5382%;"></div>
+					<div id="countdown__progress"></div>
 				</div>
 			</section>
 			<section class="" id="sub">
