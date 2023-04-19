@@ -21,6 +21,7 @@ body {
   font-size: 0;
   border-radius: 0;
 }
+
 #period__header {
   width: 60vw;
   font-size: 4vw;
@@ -31,13 +32,16 @@ body {
   font-family: var(--bold-font);
   letter-spacing: 0.2vw;
 }
+
 #period__header:focus-visible {
   outline: 0;
 }
+
 #period__header.active:focus-visible {
   border-bottom: 0.5vw solid var(--secondary-background-color);
   margin-bottom: 0;
 }
+
 #period__time {
   letter-spacing: 0;
   font-size: 8vw;
@@ -58,19 +62,22 @@ body {
   position: relative;
   cursor: default;
 }
+
 .gallery-dot.active {
   background-color: var(--active-color);
 }
+
 .gallery-dot:hover {
   background-color: var(--secondary-background-color);
 }
+
 .gallery-dot:before {
   content: '';
   position: absolute;
   background-color: transparent;
-  top:    -1.1vw;
-  left:   -1.1vw;
-  right:  -1.1vw;
+  top: -1.1vw;
+  left: -1.1vw;
+  right: -1.1vw;
   bottom: -1.1vw;
   border-radius: 1.1vw;
 }
@@ -86,6 +93,7 @@ body {
   top: 0px;
   font-family: var(--norm-font);
 }
+
 .arrow:hover {
   background-color: var(--button-hover-background);
   color: var(--button-hover-text);
@@ -94,10 +102,11 @@ body {
 #countdown {
   letter-spacing: 0.5vw;
   font-family: var(--bold-font);
-  text-align:center;
+  text-align: center;
   font-size: 0;
   overflow-y: hidden;
 }
+
 #countdown__timer {
   position: relative;
   padding: 0;
@@ -105,14 +114,16 @@ body {
   font-size: 12vw;
   color: var(--active-color);
 }
+
 #countdown__bar, #hall-pass .countdown__bar {
   position: relative;
   margin: 0 auto 2vw;
   width: 90%;
   height: 2.5vw;
   background-color: var(--secondary-background-color);
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
+
 #countdown__progress, #hall-pass .countdown__bar .countdown__progress {
   width: 0%;
   height: 2.5vw;
@@ -123,6 +134,7 @@ body {
 #sub.hidden {
   display: none;
 }
+
 #sub div {
   display: flex;
 }
@@ -136,10 +148,12 @@ body {
   top: 0px;
   font-family: var(--bold-font);
 }
+
 #sub div button.active {
   background-color: var(--active-color);
   color: var(--button-active-color);
 }
+
 #sub div button.active:hover {
   background-color: var(--active-hover-color);
   color: var(--button-active-color);
@@ -163,6 +177,7 @@ body {
   flex: 1;
   text-decoration: none;
 }
+
 #extra-features a div {
   padding: 1vw;
   font-size: 5vw;
@@ -189,8 +204,7 @@ body {
   height: 10vw;
 }
 
-#splash__body, #splash__body--alt, #splash__body--alt2
-{
+#splash__body, #splash__body--alt, #splash__body--alt2 {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
@@ -203,23 +217,24 @@ body {
   text-align: left;
   overflow: hidden;
 }
-#splash__body a, #splash__body--alt a, #splash__body--alt2 a
-{
+
+#splash__body a, #splash__body--alt a, #splash__body--alt2 a {
   color: var(--anchor-color);
 }
-#splash__body a:hover, #splash__body--alt a:hover, #splash__body--alt2 a:hover
-{
+
+#splash__body a:hover, #splash__body--alt a:hover, #splash__body--alt2 a:hover {
   color: var(--anchor-hover);
 }
-#splash__body p
-{
+
+#splash__body p {
   font-family: var(--norm-font);
   position: relative;
   margin: 0;
   outline: none;
 }
+
 #splash__body--alt, #splash__body--alt2 {
-  display:none;
+  display: none;
 }
 
 #splash__puzzle {
@@ -236,6 +251,7 @@ body {
   width: auto;
   font-size: 0;
 }
+
 #splash__puzzle-button img {
   display: block;
   position: absolute;
@@ -246,6 +262,7 @@ body {
   width: 8vw;
   height: 8vw;
 }
+
 #splash__puzzle-button p {
   position: absolute;
   top: 80%;
@@ -263,56 +280,68 @@ body {
   height: 100%;
   width: 100%;
 }
+
 #splash__puzzle-button.not-new img {
   top: 50%;
   width: 8vw;
   transform: translate(-50%, -50%);
 }
+
 #splash__puzzle-button.not-new > a > #new-puzzle-info-text {
   display: none;
 }
+
 #splash__reopen button {
-    width: 100%;
-    background: var(--button-background-color);
-    color: var(--button-text-color);
-    font-size: 4vw;
-    font-family: var(--norm-font);
-    border-radius: 5px;
-    padding: 0.5em 1em;
+  width: 100%;
+  background: var(--button-background-color);
+  color: var(--button-text-color);
+  font-size: 4vw;
+  font-family: var(--norm-font);
+  border-radius: 5px;
+  padding: 0.5em 1em;
 }
-#splash__reopen a{
-  color:inherit;
+
+#splash__reopen a {
+  color: inherit;
   text-decoration: none;
 }
+
 #link-header {
   font-size: 0;
 }
+
 #link-header img {
   padding: 2vw;
   height: 10vw;
 }
+
 #link-info {
   display: flex;
 }
+
 #link-info div {
   flex: 1;
 }
+
 #link-info p {
   margin: 0;
   padding: 3vw 0;
   font-size: 4vw;
   font-family: var(--norm-font);
 }
+
 #link-info__company img {
   display: inline-block;
   vertical-align: middle;
   padding: 1vw 0;
   width: 13vw;
 }
+
 #link-info__company p {
   display: inline-block;
   vertical-align: middle;
 }
+
 #link-button {
   width: 100%;
   padding: 1vw;
@@ -326,7 +355,7 @@ body {
   border: none;
   font-family: var(--norm-font);
   font-size: 7vw;
-  background:rgb(0,0,0,0);
+  background: rgb(0, 0, 0, 0);
   color: var(--header-text-color);
 }
 
@@ -341,32 +370,34 @@ body {
   text-align: center;
   z-index: 100;
 }
+
 #link-coupon img {
   position: relative;
   top: 0;
   width: 100%;
 }
-#link-coupon.active
-{
+
+#link-coupon.active {
   display: block;
 }
 
 #SMY {
   font-size: 0;
 }
-#SMY img{
+
+#SMY img {
   width: 98%;
   padding: 1%;
 }
 
-#new-update{
-  position:absolute;
-    bottom: 90%;
-    left: auto;
-    display: inline-block;
+#new-update {
+  position: absolute;
+  bottom: 90%;
+  left: auto;
+  display: inline-block;
 }
 
-#new-update img{
+#new-update img {
   margin: 2vw;
   width: auto;
   height: 5vw;
@@ -375,6 +406,7 @@ body {
   content: url("../images/new-update.png");
 
 }
+
 .controls {
   padding: 24px;
 }
@@ -390,7 +422,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: rgba(0,0,0,0.15);
+  background: rgba(0, 0, 0, 0.15);
   opacity: 0;
   visibility: hidden;
 }
@@ -419,7 +451,7 @@ body {
   padding: 24px;
   visibility: hidden;
   opacity: 0;
-  color: rgba(255,255,255,0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 /* Hall Pass */
@@ -530,16 +562,19 @@ body {
     margin-right: 5px;
     border-radius: 0;
   }
+
   #period__header {
     width: 300px;
     font-size: 20px;
     margin: 10px auto 2.5px;
     letter-spacing: 1px;
   }
+
   #period__header.active:focus-visible {
     border-bottom: 2.5px solid var(--secondary-background);
     background-color: var(--container-color);
   }
+
   #period__time {
     font-size: 40px;
     margin: 2.5px 0 10px;
@@ -554,10 +589,11 @@ body {
     padding: 21px 0 0;
     margin: 0 7.5px 15px;
   }
+
   .gallery-dot:before {
-    top:    -5px;
-    left:   -5px;
-    right:  -5px;
+    top: -5px;
+    left: -5px;
+    right: -5px;
     bottom: -5px;
     border-radius: 5px;
   }
@@ -572,13 +608,16 @@ body {
     letter-spacing: 2.5px;
     margin: 0 auto 5px;
   }
+
   #countdown__timer {
     font-size: 60px;
   }
+
   #countdown__bar, #hall-pass .countdown__bar {
     margin: 0 auto 10px;
     height: 12.5px;
   }
+
   #countdown__progress, #hall-pass .countdown__bar .countdown__progress {
     height: 12.5px;
   }
@@ -592,7 +631,6 @@ body {
     padding: 5px;
     font-size: 25px;
   } */
-
   #extra-features a div {
     padding: 5px;
     font-size: 25px;
@@ -605,8 +643,7 @@ body {
     margin: 10px 0;
   }
 
-  #splash__body, #splash__body--alt, #splash__body--alt2
-  {
+  #splash__body, #splash__body--alt, #splash__body--alt2 {
     padding: 10px;
     padding-left: 0;
     font-size: 20px;
@@ -615,11 +652,13 @@ body {
   #splash__puzzle-button {
     margin: 0 0 0 5px;
   }
+
   #splash__puzzle-button img {
     padding: 10px;
     width: 40px;
     height: 40px;
   }
+
   #splash__puzzle-button p {
     font-size: 15px;
     width: 40px;
@@ -628,25 +667,31 @@ body {
   #splash__puzzle-button.not-new img {
     width: 40px;
   }
-  #splash__reopen button{
+
+  #splash__reopen button {
     font-size: 20px;
   }
+
   #link-header img {
     padding: 10px;
     height: 50px;
   }
+
   #link-info p {
     padding: 15px 0;
     font-size: 25px;
   }
+
   #link-info__company img {
     padding: 5px 0;
     width: 65px;
   }
+
   #link-button {
     padding: 5px;
     font-size: 35px;
   }
+
   #link-submit {
     font-size: 35px;
   }
@@ -657,14 +702,15 @@ body {
   }
 
   /* Hall Pass */
-
   #hall-pass .unit__info {
     margin: 10px auto 7.5px;
   }
+
   #hall-pass .unit__info h1 {
     font-size: 25px;
     line-height: 25px;
   }
+
   #hall-pass .unit__info p {
     font-size: 25px;
     line-height: 25px;
@@ -672,25 +718,56 @@ body {
 
 }
 
- /* Keyframes Storage */
- @keyframes shake {
-  0% { transform: scale(1, 1) rotate(0deg); }
-  10% { transform: scale(1, 1) rotate(0deg); }
-  20% { transform: scale(1, 1) rotate(0deg); }
-  30% { transform: scale(1, 1) rotate(0deg); }
-  40% { transform: scale(1.1, 1.1) rotate(5deg); }
-  50% { transform: scale(1.1, 1.1) rotate(-6deg); }
-  60% { transform: scale(1.1, 1.1) rotate(7deg); }
-  70% { transform: scale(1.2, 1.2) rotate(-8deg); }
-  80% { transform: scale(1.3, 1.3) rotate(9deg); }
-  90% { transform: scale(1.3, 1.3) rotate(-10deg); }
-  95% { transform: scale(1.3, 1.3) rotate(9deg); }
-  96% { transform: scale(1.4, 1.4) rotate(-8deg); }
-  97% { transform: scale(1.3, 1.3) rotate(7deg); }
-  98% { transform: scale(1.2, 1.2) rotate(-6deg); }
-  99% { transform: scale(1.1, 1.1) rotate(5deg); }
-  100% { transform: scale(1, 1) rotate(0deg); }
-
+/* Keyframes Storage */
+@keyframes shake {
+  0% {
+    transform: scale(1, 1) rotate(0deg);
+  }
+  10% {
+    transform: scale(1, 1) rotate(0deg);
+  }
+  20% {
+    transform: scale(1, 1) rotate(0deg);
+  }
+  30% {
+    transform: scale(1, 1) rotate(0deg);
+  }
+  40% {
+    transform: scale(1.1, 1.1) rotate(5deg);
+  }
+  50% {
+    transform: scale(1.1, 1.1) rotate(-6deg);
+  }
+  60% {
+    transform: scale(1.1, 1.1) rotate(7deg);
+  }
+  70% {
+    transform: scale(1.2, 1.2) rotate(-8deg);
+  }
+  80% {
+    transform: scale(1.3, 1.3) rotate(9deg);
+  }
+  90% {
+    transform: scale(1.3, 1.3) rotate(-10deg);
+  }
+  95% {
+    transform: scale(1.3, 1.3) rotate(9deg);
+  }
+  96% {
+    transform: scale(1.4, 1.4) rotate(-8deg);
+  }
+  97% {
+    transform: scale(1.3, 1.3) rotate(7deg);
+  }
+  98% {
+    transform: scale(1.2, 1.2) rotate(-6deg);
+  }
+  99% {
+    transform: scale(1.1, 1.1) rotate(5deg);
+  }
+  100% {
+    transform: scale(1, 1) rotate(0deg);
+  }
 
 
 }
