@@ -1,0 +1,9 @@
+.alert_container {
+	display: flex;
+	justify-content: center;
+}
+
+.alert_body {
+	font-size: 20px;
+	margin: 0;
+}

@@ -1,0 +1,9 @@
+.article_container {
+	display: flex;
+	justify-content: left;
+}
+
+.article_body {
+	font-size: 20px;
+	margin: 0;
+}
