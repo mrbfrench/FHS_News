@@ -1,9 +1,28 @@
 .alert_container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
 
 .alert_body {
-	font-size: 20px;
+	display: flex;
+	justify-content: center;
+}
+.alert_body p {
 	margin: 0;
+	font-size: 20px;
+}
+
+.alert_buttons {
+	display: flex;
+	justify-content: center;
+}
+.alert_buttons button {
+	color: var(--anchor-color);
+	background-color: transparent;
+	text-decoration: underline;
+}
+.alert_buttons button:hover {
+	background-color: var(--button-hover-background);
+	color: var(--button-hover-text);
 }
