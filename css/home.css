@@ -119,8 +119,10 @@ body {
 	position: relative;
 	margin: 0 auto 2vw;
 	width: 90%;
-	height: 2.5vw;
-	background-color: var(--secondary-background-color);
+	height: 2vw;
+	border-radius: 1vw;
+	border: 0.25vw solid var(--active-color);
+	background-color: var--(secondary-background-color);
 	overflow-x: hidden;
 }
 
@@ -560,7 +562,7 @@ body {
 		letter-spacing: 1px;
 		margin-left: 5px;
 		margin-right: 5px;
-		border-radius: 0;
+		border-radius: 1vw;
 	}
 
 	#period__header {

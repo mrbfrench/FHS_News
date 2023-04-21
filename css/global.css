@@ -71,6 +71,7 @@ button {
 button:hover {
 	background-color: var(--button-hover-background);
 	color: var(--button-hover-text);
+	border-radius: 1vw;
 }
 
 .wrapper {
@@ -89,6 +90,7 @@ button:hover {
 	margin: auto;
 	padding: 2vw;
 	padding-bottom: 14vw;
+	border-radius: 1vw;
 }
 
 .row {
@@ -96,11 +98,15 @@ button:hover {
 	height: auto;
 	text-align: center;
 	margin-bottom: 1vw;
+	border-radius: 1vw;
+	padding: 0.5vw;
 }
 
 .container {
 	background: var(--container-background-color);
 	color: var(--container-text-color);
+	border-radius: 1vw;
+	padding: 0.5vw;
 	text-align: center;
 }
 
