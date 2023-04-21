@@ -606,7 +606,7 @@ body {
 
 	#countdown {
 		letter-spacing: 2.5px;
-		margin: 0 auto 5px;
+		margin: 0 auto 0px;
 	}
 
 	#countdown__timer {
