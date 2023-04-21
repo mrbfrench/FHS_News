@@ -1,0 +1,9 @@
+.settings_container {
+	border-radius: 1vw;
+	padding: 0.5vw;
+}
+
+.settings_container p {
+	margin: 6px;
+	text-align: start;
+}
