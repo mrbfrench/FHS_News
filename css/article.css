@@ -22,12 +22,18 @@
 	align-items: center;
 	align-content: start;
 	display: flex;
+	background-color: var(--anchor-color);
 }
 
 .article_topper img {
 	width: 34px;
 	height: 34px;
 	padding: 6px;
+}
+
+.article_topper p {
+	color: white;
+	font-family: var(--bold-font);
 }
 
 .article_thumbnail {
