@@ -184,7 +184,7 @@ header a {
 #nav-tabs a div,
 header a div {
 	display: inline-block;
-	width: calc(100% / 4);
+	width: calc(100% / 5);
 	height: auto;
 }
 
