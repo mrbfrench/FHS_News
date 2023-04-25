@@ -1,0 +1,34 @@
+.weather_data_container {
+	display: grid;
+}
+
+.weather_left {
+	float: left;
+}
+.weather_middle {
+	float: right;
+	vertical-align: middle;
+}
+.weather_middle b {
+	font-family: var(--bold-font);
+	font-size: 40px;
+}
+.weather_right {
+	float: right;
+}
+.weather_right img {
+	vertical-align: middle;
+}
+
+.weather_data_container span {
+	margin: 6px;
+}
+
+.weather_data_container p {
+	margin: 0px;
+	text-align: start;
+}
+
+.weather_data_container img {
+	height: 64px;
+}
