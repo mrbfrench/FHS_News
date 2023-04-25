@@ -11,13 +11,17 @@
 	<title>Calendar</title>
 	<link rel="shortcut icon" type="image/ico" href="https://schedlink.com/global/images/favicon.ico">
 
-	<script src="../json/schedules.js" charset="utf-8"></script>
-	<script src="../json/schedule-calendar.js" charset="utf-8"></script>
+	<script src="/FHSnewsWeb/json/schedules.js" charset="utf-8"></script>
+	<script src="/FHSnewsWeb/json/schedule-calendar.js" charset="utf-8"></script>
+	
+	<script src="/FHSnewsWeb/js/DOM.js" charset="utf-8"></script>
+	<script src="/FHSnewsWeb/js/calendar.js" charset="utf-8"></script>
+	<script src="/FHSnewsWeb/js/calendar_html.js" charset="utf-8"></script>
 
-	<link rel="stylesheet" href="../css/global.css">
-	<link rel="stylesheet" href="../css/calendar.css">
+	<link rel="stylesheet" href="/FHSnewsWeb/css/global.css">
+	<link rel="stylesheet" href="/FHSnewsWeb/css/calendar.css">
 
-	<link rel="stylesheet" href="../themes/default.css">
+	<link rel="stylesheet" href="/FHSnewsWeb/themes/default.css">
 </head>
 <body>
 <canvas id="canvas"></canvas>
@@ -170,9 +174,6 @@
 	</nav>
 </div>
 
-<script src="css/DOM.js" charset="utf-8"></script>
-<script src="css/calendar.js" charset="utf-8"></script>
-<script src="css/calendar_html.js" charset="utf-8"></script>
 <script type="text/javascript">
 	var calendarSection, scheduleSection, calendar;
 	calendar = new Calendar(false);
