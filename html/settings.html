@@ -44,7 +44,10 @@
 			<section class="row setting">
 				<div class="container settings_container">
 					<!-- Your card contents go here -->
-					HUE
+					<p>HUE</p>
+					<form action=themes/customtheme.css>
+						<input type="color" id="maincolor">
+					</form>
 				</div>
 			</section>
 		</section>
@@ -58,9 +61,9 @@
 					BACKGROUND COLOR
 					<form action=themes/customtheme.css>
 						<label for="darkerBackground">Darker</label>
-						<input type="radio" id="darkerBackground">
+						<input type="radio" id="darkerBackground" name="bgbrightness">
 						<label for="lighterBackground">Lighter</label>
-						<input type="radio" id="lighterBackground">
+						<input type="radio" id="lighterBackground" name="bgbrightness">
 					</form>
 				</div>
 			</section>
@@ -72,7 +75,7 @@
 			<section class="row setting">
 				<div class="container settings_container">
 					<!-- Your card contents go here -->
-					Rounded Edges
+					<p>Rounded edges</p>
 					<label class="switch">
 						<input type="checkbox">
 						<span class="slider round"></span>
