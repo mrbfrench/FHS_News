@@ -11,6 +11,10 @@
 	justify-content: center;
 }
 
+.lunch_title {
+	font-family: var(--bold-font);
+}
+
 .lunch_menus span {
 	margin-left: 3px;
 	margin-right: 3px;
