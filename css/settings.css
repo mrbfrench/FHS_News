@@ -49,7 +49,7 @@
 }
 
 input:checked + .slider {
-	background-color: #2196F3;
+	background-color: #ff0000;
 }
 
 input:focus + .slider {
@@ -70,3 +70,5 @@ input:checked + .slider:before {
 .slider.round:before {
 	border-radius: 50%;
 }
+
+p {text-align: center;}
