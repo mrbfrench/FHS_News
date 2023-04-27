@@ -1,27 +1,26 @@
-.weather_data_container {
-	display: grid;
+.weather_contents {
+	display: flex;
+	align-items: center;
+}
+
+.weather_contents span {
+	margin: 6px;
 }
 
 .weather_left {
-	float: left;
+	height: fit-content;
 }
 .weather_middle {
-	float: right;
-	vertical-align: middle;
+	margin-left: auto !important;
+	height: fit-content;
 }
+.weather_right {
+	height: 64px;
+}
+
 .weather_middle b {
 	font-family: var(--bold-font);
 	font-size: 40px;
-}
-.weather_right {
-	float: right;
-}
-.weather_right img {
-	vertical-align: middle;
-}
-
-.weather_data_container span {
-	margin: 6px;
 }
 
 .weather_data_container p {
@@ -31,4 +30,5 @@
 
 .weather_data_container img {
 	height: 64px;
+	width: 64px;
 }
