@@ -71,6 +71,16 @@ window.addEventListener('load', function () {
 	testArticle.className = "block"
 	fetch('http://localhost:63342/FHSnewsWeb/modules/article.html').then(response => response.text()).then(response => {
 		let newResponse = response
+		// TODO: Automate this via for loop
+		newResponse = newResponse.replace("%toppertext%", "Topper text")
+		newResponse = newResponse.replace("%topperurl%", "img/placeholder.png")
+		newResponse = newResponse.replace("%articleimage%", "img/placeholder.png")
+		newResponse = newResponse.replace("%postedtime%", "4 days ago")
+		newResponse = newResponse.replace("%authorname%", "Joe Nuts")
+		newResponse = newResponse.replace("%articlename%", "Bread roll")
+		newResponse = newResponse.replace("%subtitle%", "This Is A Bread Roll")
+		newResponse = newResponse.replace("%content%", "I LOVE BREAD ROLL!!")
+
 		testArticle.innerHTML = newResponse
 	})
 	mainContent.appendChild(testArticle)
