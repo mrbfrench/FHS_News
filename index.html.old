@@ -104,6 +104,145 @@
 		  </section> -->
 		</section>
 		<!-- Clock -->
+
+		<!-- Alert box -->
+		<section class="block">
+			<section class="row alert">
+				<div class="container alert_container">
+					<div class="alert_body">
+						<p>Welcome to FHS News!</p>
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- Alert box -->
+
+		<!-- Alert box -->
+		<section class="block">
+			<section class="row alert">
+				<div class="container alert_container">
+					<div class="alert_body">
+						<p>Alert box with buttons</p>
+					</div>
+					<div class="alert_buttons">
+						<button>Button 1</button>
+						<button>Button 2</button>
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- Alert box -->
+
+		<!-- Weather box -->
+		<section class="block">
+			<section class="row weather_data">
+				<div class="container weather_data_container">
+					<div class="weather_contents">
+						<span class="weather_left">
+							<b>Current weather at FHS</b>
+							<p>Broken Clouds</p>
+							<p>Updated 15 minutes ago</p>
+						</span>
+
+						<span class="weather_middle">
+							<b>72&deg;F</b>
+						</span>
+
+						<span class="weather_right">
+							<img src="img/placeholder.png">
+						</span>
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- Weather box -->
+
+		<!-- Lunch box -->
+		<section class="block">
+			<section class="row lunch_data">
+				<div class="container lunch_data_container">
+					<div class="lunch_contents">
+						<b class="lunch_title">FHS Diner</b>
+						<div class="lunch_menus">
+							<span>
+								<b>Entree</b>
+								<p>Soup</p>
+								<p>Soup</p>
+							</span>
+							<span>
+								<b>Vegetable</b>
+								<p>Soup</p>
+								<p>Soup</p>
+							</span>
+							<span>
+								<b>Grain</b>
+								<p>Soup</p>
+								<p>Soup</p>
+							</span>
+							<span>
+								<b>Fruit</b>
+								<p>Soup</p>
+								<p>Soup</p>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- Lunch box -->
+
+
+		<!-- Article box -->
+		<section class="block">
+			<section class="row article">
+				<div class="container article_container">
+					<div class="article_topper">
+						<img src="img/placeholder.png">
+						<p>Article box</p>
+					</div>
+					<img class="article_thumbnail" src="img/placeholder.png">
+					<div>
+						<span class="article_headline"><p>Bread roll</p></span>
+						<span class="article_info">
+							<div class="article_time_posted">4 days ago</div>
+							<div class="article_author">Joe Nuts</div>
+						</span>
+					</div>
+					<em class="article_subtitle"><p>This Is A Bread Roll</p></em>
+					<p class="article_content">I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!!
+						YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE
+						BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!!
+						YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE
+						BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!!
+						YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE
+						BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!!
+						YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE
+						BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!!
+						YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE
+						BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!!
+						YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE
+						BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!!
+						YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE
+						BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!!
+						YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE BREAD ROLL!! YEAH!! I LOVE
+						BREAD ROLL!! YEAH!! </p>
+				</div>
+			</section>
+		</section>
+		<!-- Article box -->
+
+		<!-- Club box -->
+		<section class="block">
+			<section class="row club">
+				<div class="container club_container">
+					<img class="club_thumbnail" src="img/placeholder.png">
+					<p class="club_headline">Bread roll Enjoyers United</p>
+					<em class="club_subtitle"><p>We love bread roll!</p></em>
+					<p class="club_content">We think about bread roll in this club</p>
+				</div>
+			</section>
+		</section>
+		<!-- Club box -->
 	</article>
 	<!-- Bottom bar -->
 	<nav>
