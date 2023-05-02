@@ -30,16 +30,41 @@ async function getHome(position = 0, quantity = 5) {
 
 	return fetch(targetUrl).then(response => response.json()).then(response => {
 		return response
+	}).catch(function(e) {
+		throw e
 	})
+
 }
 
 // TODO: Load each module in the folder once and pull from there instead of dinging the module location for each and every card
 
 window.addEventListener('load', function () {
 	// Runs when the webpage finishes loading
-
-	// This Is A Test
 	let mainContent = document.getElementById("main-content")
+
+	getHome(0,8).then(response => {
+		for (let item in response) {
+			let thisItem = document.createElement("section")
+			thisItem.className = "block"
+			fetch('http://localhost:63342/FHSnewsWeb/modules/alert.html').then(module => module.text()).then(module => {
+				let newModule = module
+				newModule = newModule.replace("%alerttext%", JSON.stringify(response[item]))
+				thisItem.innerHTML = newModule
+			})
+			mainContent.appendChild(thisItem)
+		}
+	}).catch(function() {
+		let thisItem = document.createElement("section")
+		thisItem.className = "block"
+		fetch('http://localhost:63342/FHSnewsWeb/modules/alert.html').then(module => module.text()).then(module => {
+			let newModule = module
+			newModule = newModule.replace("%alerttext%", "Could not reach the API!")
+			thisItem.innerHTML = newModule
+		})
+		mainContent.appendChild(thisItem)
+	})
+	/*
+	// This Is A Test
 	let testAlert = document.createElement("section")
 	testAlert.className = "block"
 	fetch('http://localhost:63342/FHSnewsWeb/modules/alert.html').then(response => response.text()).then(response => {
@@ -92,6 +117,7 @@ window.addEventListener('load', function () {
 		testClub.innerHTML = newResponse
 	})
 	mainContent.appendChild(testClub)
+	 */
 
 })
 

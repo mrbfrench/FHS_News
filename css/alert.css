@@ -9,6 +9,7 @@
 .alert_body p {
 	margin: 0;
 	font-size: 20px;
+	overflow-wrap: anywhere;
 }
 
 .alert_buttons {
