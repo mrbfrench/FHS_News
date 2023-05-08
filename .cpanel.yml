@@ -1,6 +1,6 @@
 deployment:
     tasks:
-        - export DEPLOYPATH=/home/fhsnzrgr/public_html/
+        - export DEPLOYPATH=/home/fhsnzrgr/dev.fhs-news.org/
         - /usr/bin/scp -r css/ $DEPLOYPATH
         - /usr/bin/scp -r fonts/ $DEPLOYPATH
         - /usr/bin/scp -r html/ $DEPLOYPATH
