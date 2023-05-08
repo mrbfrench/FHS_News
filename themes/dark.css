@@ -21,6 +21,8 @@
   --navigation-icon-color: rgb(100,100,100);
   --navigation-active-icon-color: #464646;
 
+	--error-bg: rgb(50,0,0);
+
   --active-color: black;
   --active-hover-color: rgb(230,0,0);
 
