@@ -24,7 +24,7 @@ get().then(obj =>
  */
 async function getHome(position = 0, quantity = 5) {
 	// noinspection JSCheckFunctionSignatures
-	const targetUrl = 'http://localhost:3000/api/home?' + new URLSearchParams({
+	const targetUrl = 'http://api.fhs-news.org/home?' + new URLSearchParams({
 		position: position, quantity: quantity
 	})
 
@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
 		for (let item in response) {
 			let thisItem = document.createElement("section")
 			thisItem.className = "block"
-			fetch('http://localhost:63342/FHSnewsWeb/modules/alert.html').then(module => module.text()).then(module => {
+			fetch('https://fhs-news.org/modules/alert.html').then(module => module.text()).then(module => {
 				let newModule = module
 				newModule = newModule.replace("%alerttext%", JSON.stringify(response[item]))
 				thisItem.innerHTML = newModule
@@ -56,7 +56,7 @@ window.addEventListener('load', function () {
 	}).catch(function() {
 		let thisItem = document.createElement("section")
 		thisItem.className = "block"
-		fetch('http://localhost:63342/FHSnewsWeb/modules/alert.html').then(module => module.text()).then(module => {
+		fetch('https://fhs-news.org/modules/alert.html').then(module => module.text()).then(module => {
 			let newModule = module
 			newModule = newModule.replace("%alerttext%", "Could not reach the API!")
 			thisItem.innerHTML = newModule
