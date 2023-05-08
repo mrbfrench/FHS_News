@@ -1,16 +1,16 @@
 deployment:
     tasks:
         - export DEPLOYPATH=/home/fhsnzrgr/public_html/
-        - /bin/scp -r css/ $DEPLOYPATH
-        - /bin/scp -r fonts/ $DEPLOYPATH
-        - /bin/scp -r html/ $DEPLOYPATH
-        - /bin/scp -r img/ $DEPLOYPATH
-        - /bin/scp -r js/ $DEPLOYPATH
-        - /bin/scp -r json/ $DEPLOYPATH
-        - /bin/scp -r modules/ $DEPLOYPATH
-        - /bin/scp -r themes/ $DEPLOYPATH
-        - /bin/scp 404.html $DEPLOYPATH
-        - /bin/scp favicon.ico $DEPLOYPATH
-        - /bin/scp humans.txt $DEPLOYPATH
-        - /bin/scp index.html $DEPLOYPATH
-        - /bin/scp robots.txt $DEPLOYPATH
+        - /usr/bin/scp -r css/ $DEPLOYPATH
+        - /usr/bin/scp -r fonts/ $DEPLOYPATH
+        - /usr/bin/scp -r html/ $DEPLOYPATH
+        - /usr/bin/scp -r img/ $DEPLOYPATH
+        - /usr/bin/scp -r js/ $DEPLOYPATH
+        - /usr/bin/scp -r json/ $DEPLOYPATH
+        - /usr/bin/scp -r modules/ $DEPLOYPATH
+        - /usr/bin/scp -r themes/ $DEPLOYPATH
+        - /usr/bin/scp 404.html $DEPLOYPATH
+        - /usr/bin/scp favicon.ico $DEPLOYPATH
+        - /usr/bin/scp humans.txt $DEPLOYPATH
+        - /usr/bin/scp index.html $DEPLOYPATH
+        - /usr/bin/scp robots.txt $DEPLOYPATH
