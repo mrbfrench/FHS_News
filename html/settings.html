@@ -10,6 +10,7 @@
 	<!-- JSON goes here -->
 
 	<!-- Scripts go here -->
+	<script src="/FHSnewsWeb/js/colors.js" charset="utf-8"></script>
 
 	<!-- CSS files go here -->
 	<link rel="stylesheet" href="/css/global.css">
@@ -17,7 +18,7 @@
 	<link rel="stylesheet" href="/css/settings.css">
 
 	<!-- Current theme goes here -->
-	<link rel="stylesheet" href="/themes/default.css">
+	<link rel="stylesheet" href="/themes/custom.css">
 </head>
 <body>
 
@@ -45,10 +46,12 @@
 				<div class="container settings_container">
 					<!-- Your card contents go here -->
 					<p>COLORS</p>
-					<form action=FHSnewsWeb/themes/default.css>
-						<label>MAIN COLOR: </label><input type="color" id="maincolor">
-						<label>SECONDARY COLOR: </label><input type="color" id="secondarycolor">
-						<label>TEXT COLOR: </label><input type="color" id="accentcolor">
+					<form >
+						<label>MAIN COLOR: </label><input type="color" id="main-color" value="--color-1">
+						<label>SECONDARY COLOR: </label><input type="color" id="secondary-color" value="--color-2">
+						<label>TEXT COLOR: </label><input type="color" id="text-color" value="">
+						<label>ACCENT COLOR: </label><input type="color" id="accent-color" value="--color-3">
+						<br><input type="submit" value="SUBMIT">
 					</form>
 				</div>
 			</section>
