@@ -21,9 +21,6 @@ function updateColors() {
 
 	// Apply the colors as CSS values to an element
 	const coloredElement = document.getElementById('colored-element');
-	coloredElement.style.backgroundColor = colorValue1;
-	coloredElement.style.color = colorValue2;
-	coloredElement.style.borderColor = colorValue3;
 }
 
 // Check if color values are already saved in localStorage
@@ -34,9 +31,6 @@ const savedColor3 = localStorage.getItem('selectedColor3');
 if (savedColor1 && savedColor2 && savedColor3) {
 	// Apply the saved colors as CSS values to the element
 	const coloredElement = document.getElementById('colored-element');
-	coloredElement.style.backgroundColor = savedColor1;
-	coloredElement.style.color = savedColor2;
-	coloredElement.style.borderColor = savedColor3;
 
 	// Set the color input values to the saved colors
 	colorInput1.value = savedColor1;
