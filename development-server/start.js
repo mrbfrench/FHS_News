@@ -5,22 +5,26 @@ const path = require('path')
 const hostname = 'localhost'
 const port = 48531
 
+const projectRoot = path.resolve('./')
+
 const server = http.createServer((req, res) => {
+	console.log(projectRoot+req.url)
 	let filePath = ""
-	if (req.url === "/") {
-		filePath = path.resolve('../index.html')
+	if (req.url == "/") {
+		filePath = path.resolve(projectRoot+'/index.html')
 	} else {
-		filePath = path.resolve('../'+req.url)
+		filePath = path.resolve(projectRoot+req.url)
 	}
 	if (fs.existsSync(filePath)) {
 		res.statusCode = 200
 		fs.createReadStream(filePath).pipe(res)
 	} else {
 		res.statusCode = 404
-		fs.createReadStream(path.resolve('../404.html')).pipe(res)
+		fs.createReadStream(path.resolve('./404.html')).pipe(res)
 	}
 })
 
 server.listen(port, hostname, () => {
 	console.log('Started at http://'+hostname+':'+port+'/')
+	import('open').then(module => {module.default('http://'+hostname+':'+port+'/')})
 })
