@@ -8,6 +8,7 @@ const port = 48531
 const projectRoot = path.resolve('./')
 
 const server = http.createServer((req, res) => {
+	req.url = req.url.split("?")[0]
 	console.log(projectRoot+req.url)
 	let filePath = ""
 	if (req.url == "/") {
