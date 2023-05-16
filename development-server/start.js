@@ -26,5 +26,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, hostname, () => {
 	console.log('Started at http://'+hostname+':'+port+'/')
+	console.log("The development viewer is now running. You should be able to preview the website as you work now.")
+	console.log("You do not need to re-run it each time you make changes, your changes should automatically appear in the web browser each time you refresh the page.")
 	import('open').then(module => {module.default('http://'+hostname+':'+port+'/')})
 })
