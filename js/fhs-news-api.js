@@ -1,6 +1,5 @@
 console.log("testy westy");
 
-/*
 async function get() {
 	let obj = fetch('http://localhost:3000/api/home')
 
@@ -10,13 +9,12 @@ async function get() {
 get().then(obj =>
 	console.log(obj.text().valueOf())
 )
-*/
 
-//let mainContent = document.getElementById("main-content")
-//console.log(mainContent)
+let mainContent = document.getElementById("main-content")
+console.log(mainContent)
 
-//let element = document.createElement("section")
-//mainContent.appendChild(element)
+let element = document.createElement("section")
+mainContent.appendChild(element)
 
 /**
  * Returns an array with each entry representing a card in the home feed
@@ -46,7 +44,7 @@ window.addEventListener('load', function () {
 		for (let item in response) {
 			let thisItem = document.createElement("section")
 			thisItem.className = "block"
-			fetch('https://fhs-news.org/modules/alert.html').then(module => module.text()).then(module => {
+			fetch('../modules/alert.html').then(module => module.text()).then(module => {
 				let newModule = module
 				newModule = newModule.replace("%alerttext%", JSON.stringify(response[item]))
 				thisItem.innerHTML = newModule
@@ -56,18 +54,17 @@ window.addEventListener('load', function () {
 	}).catch(function() {
 		let thisItem = document.createElement("section")
 		thisItem.className = "block"
-		fetch('https://fhs-news.org/modules/alert.html').then(module => module.text()).then(module => {
+		fetch('../modules/alert.html').then(module => module.text()).then(module => {
 			let newModule = module
 			newModule = newModule.replace("%alerttext%", "Could not reach the API!")
 			thisItem.innerHTML = newModule
 		})
 		mainContent.appendChild(thisItem)
 	})
-	/*
 	// This Is A Test
 	let testAlert = document.createElement("section")
 	testAlert.className = "block"
-	fetch('http://localhost:63342/FHSnewsWeb/modules/alert.html').then(response => response.text()).then(response => {
+	fetch('../modules/alert.html').then(response => response.text()).then(response => {
 		let newResponse = response
 		newResponse = newResponse.replace("%alerttext%", "Bruh")
 		testAlert.innerHTML = newResponse
@@ -78,7 +75,7 @@ window.addEventListener('load', function () {
 
 	let testWeather = document.createElement("section")
 	testWeather.className = "block"
-	fetch('http://localhost:63342/FHSnewsWeb/modules/weather_data.html').then(response => response.text()).then(response => {
+	fetch('../modules/weather_data.html').then(response => response.text()).then(response => {
 		let newResponse = response
 		testWeather.innerHTML = newResponse
 	})
@@ -86,7 +83,7 @@ window.addEventListener('load', function () {
 
 	let testLunch = document.createElement("section")
 	testLunch.className = "block"
-	fetch('http://localhost:63342/FHSnewsWeb/modules/lunch_data.html').then(response => response.text()).then(response => {
+	fetch('../modules/lunch_data.html').then(response => response.text()).then(response => {
 		let newResponse = response
 		testLunch.innerHTML = newResponse
 	})
@@ -94,7 +91,7 @@ window.addEventListener('load', function () {
 
 	let testArticle = document.createElement("section")
 	testArticle.className = "block"
-	fetch('http://localhost:63342/FHSnewsWeb/modules/article.html').then(response => response.text()).then(response => {
+	fetch('../modules/article.html').then(response => response.text()).then(response => {
 		let newResponse = response
 		// TODO: Automate this via for loop
 		newResponse = newResponse.replace("%toppertext%", "Topper text")
@@ -112,12 +109,11 @@ window.addEventListener('load', function () {
 
 	let testClub = document.createElement("section")
 	testClub.className = "block"
-	fetch('http://localhost:63342/FHSnewsWeb/modules/club.html').then(response => response.text()).then(response => {
+	fetch('../modules/club.html').then(response => response.text()).then(response => {
 		let newResponse = response
 		testClub.innerHTML = newResponse
 	})
 	mainContent.appendChild(testClub)
-	 */
 
 })
 

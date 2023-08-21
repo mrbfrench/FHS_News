@@ -403,7 +403,7 @@ body {
 	height: 5vw;
 	animation: shake 1s;
 	animation-iteration-count: infinite;
-	content: url("../images/new-update.png");
+	content: url("../img/placeholder.png");
 
 }
 

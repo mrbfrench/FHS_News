@@ -1,2 +1,2 @@
-# FHSnewsWeb
-fhs news web
+# FHS_News
+fhs news
